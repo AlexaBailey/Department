@@ -1,0 +1,16 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+// @font-face {
+//   font-family: "Murs";
+//   src:
+//     local("Murs"),
+//     url("../assets/fonts/MURSGOTHIC-WIDEDARK.TTF") format("truetype");
+//   font-weight: normal;
+// }
+
+body {
+  margin: 0px;
+  background-color: white;
+}

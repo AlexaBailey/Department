@@ -1,0 +1,5 @@
+librarianId,schedule
+1,Monday|Wednesday|Friday
+2,Tuesday|Thursday
+3,Monday|Thursday
+4,Wednesday|Friday

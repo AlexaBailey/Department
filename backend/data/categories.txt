@@ -1,0 +1,9 @@
+id,name
+cat_1,Classics
+cat_2,Dystopian
+cat_3,Historical
+cat_4,Mystery
+cat_5,Fantasy
+cat_6,Young Adult
+cat_7,Philosophical
+cat_8,Drama
