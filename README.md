@@ -1,8 +1,38 @@
-# React + Vite
+# Проект: Сайт для упрощения аттестаций
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Добро пожаловать в проект, созданный для упрощения процесса аттестаций в высших учебных заведениях и других образовательных учреждениях.
 
-Currently, two official plugins are available:
+## Описание
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Этот сайт позволяет преподавателям и администрации учебных заведений полностью автоматизировать процедуру аттестации, включая:
+
+- Регистрацию и аутентификацию пользователей.
+- Добавление и редактирование дисциплин, групп и преподавателей.
+- Генерацию и печать бланков аттестации.
+- Автоматическое обновление сводных ведомостей.
+- Отслеживание результатов аттестаций (зачтено/незачтено и оценки).
+
+## Функции
+
+### Для преподавателей
+
+- Удобный интерфейс для выбора группы, предмета и типа аттестации.
+- Простое добавление оценок и статуса (зачтено/не зачтено).
+
+### Для администрации
+
+- Ролевой доступ для преподавателей и админов.
+- Возможность импорта списков студентов и групп из Excel.
+- Генерация PDF и Word бланков.
+
+## Технологии
+
+- **Frontend**: React + Vite, Tailwind CSS, MUI.
+- **Backend**: Node.js, Express.
+- **Database**: PostgreSQL.
+- **Authentication**: JWT + OAuth 2.0.
+- **File Processing**: XLSX, DOCX.
+
+## Файлы и изображения
+
+К этому репозиторию

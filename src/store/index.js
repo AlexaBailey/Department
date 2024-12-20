@@ -1,27 +1,31 @@
-import { configureStore } from "@reduxjs/toolkit";
-import { booksApi } from "./slices/api/booksApi";
-import { categoriesApi } from "./slices/api/categoriesApi";
-import { visitorsApi } from "./slices/api/visitorsApi";
-import { employeesApi } from "./slices/api/employeesApi";
-import { authApi } from "./slices/api/authApi";
-import authReducer from "../store/slices/auth";
+import { configureStore } from '@reduxjs/toolkit';
+import {
+	dictionaryReducer,
+	userReducer,
+	authReducer,
+	brigadesReducer,
+	settingsReducer,
+	logsReducer,
+} from './slices';
+import { api } from '../utils/axios';
+import { relogin } from './slices';
+import { logout } from './slices/auth/auth-slice';
+
 const store = configureStore({
-  reducer: {
-    [booksApi.reducerPath]: booksApi.reducer,
-    [categoriesApi.reducerPath]: categoriesApi.reducer,
-    [visitorsApi.reducerPath]: visitorsApi.reducer,
-    [employeesApi.reducerPath]: employeesApi.reducer,
-    [authApi.reducerPath]: authApi.reducer,
-    auth: authReducer,
-  },
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(
-      booksApi.middleware,
-      categoriesApi.middleware,
-      visitorsApi.middleware,
-      employeesApi.middleware,
-      authApi.middleware
-    ),
+	reducer: {
+		auth: authReducer,
+		users: userReducer,
+		brigades: brigadesReducer,
+		dictionary: dictionaryReducer,
+		settings: settingsReducer,
+		logs: logsReducer,
+	},
+	middleware: (getDefaultMiddleware) =>
+		getDefaultMiddleware({
+			thunk: {
+				extraArgument: { api, relogin, logout },
+			},
+		}),
 });
 
 export default store;

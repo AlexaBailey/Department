@@ -1,5 +1,0 @@
-id,name,surname,section,experience,userId
-1,John Doe,Doe,Fiction,10,1
-2,Jane Smith,Smith,Science,5,2
-3,Alice Brown,Brown,History,15,3
-4,Bob Johnson,Johnson,Art,8,4
